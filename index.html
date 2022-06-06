@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Here is the bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- By using the keyword 'defer' it makes the script load after all of the HTML has been loaded -->
+    <script src="app.js" defer></script>
+    <!-- This is the custom CSS sheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body id="bod">
+    <div id="fluidContainer" class="container-fluid">
+      <div class="row m-3">
+        <div id="movieDiv" class="container px-3 col-5">
+          <h1 id="movie-heading" class="display-1">Favorite Movies</h1>
+          <ul id="movies">
+            <li id="matrix" class="movie-list-items display-3">The Matrix</li>
+            <li id="chappie" class="movie-list-items display-3">Chappie</li>
+            <li id="upgrade" class="movie-list-items display-3">Upgrade</li>
+            <li id="district9" class="movie-list-items display-3">
+              District 9
+            </li>
+          </ul>
+        </div>
+
+        <div id="bandsDiv" class="container px-3 col-5">
+          <h1 id="band-heading" class="display-1">Favorite Bands</h1>
+          <ul id="bands">
+            <li id="sb" class="band-list-items display-3">Spiritbox</li>
+            <li id="vom" class="band-list-items display-3">Veil of Maya</li>
+            <li id="vit" class="band-list-items display-3">Vitalism</li>
+            <li id="tbdm" class="band-list-items display-3">
+              The Black Dahlia Murder
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
